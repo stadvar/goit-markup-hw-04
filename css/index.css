@@ -183,19 +183,21 @@
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
 }
+
 .tsocial__link {
-  display: inline-block;
-}
-.tsocial__link:hover .tsocial__img,
-.tsocial__link:focus .tsocial__img {
-  background-color: var(--active-color);
-  fill: white;
-}
-.tsocial__img {
-  fill: #afb1b8;
+  display: block;
+  color: #afb1b8;
   border-radius: 50%;
 }
-
+.tsocial__link:hover,
+.tsocial__link:focus {
+  color: white;
+  background-color: var(--active-color);
+}
+.tsocial__img {
+  fill: currentColor;
+  display: block;
+}
 .clients__list {
   display: flex;
   justify-content: space-between;
